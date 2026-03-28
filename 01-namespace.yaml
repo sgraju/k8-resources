@@ -3,5 +3,5 @@ kind: namespace
 metadata:
   name: roboshop
   lables:
-    environmet: development
+    environment: development
     project: roboshop
