@@ -4,5 +4,7 @@ metadata:
   name: error-test
 spec:
   containers:
-  - name: nginx
-    image: nginxasdfasdfas
+#  - name: nginx
+#    image: nginxasdfasdfas
+   - name: almalinux
+     image: almalinux:9
