@@ -14,19 +14,19 @@ spec:
     fsType: ext4
     volumeHandle: vol-02a5d5ef66b0c257f
 ---
-# apiVersion: v1
-# kind: PersistentVolumeClaim
-# metadata:
-#   name: ebs-static
-# spec:
-#   storageClassName: "" # Empty string must be explicitly set otherwise default StorageClass will be set
-#   volumeName: ebs-static
-#   accessModes:
-#     - ReadWriteOnce
-#   resources:
-#     requests:
-#       storage: 15Gi
-# ---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ebs-static
+spec:
+  storageClassName: "" # Empty string must be explicitly set otherwise default StorageClass will be set
+  volumeName: ebs-static
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 15Gi
+---
 # apiVersion: v1
 # kind: Pod
 # metadata:
